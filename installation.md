@@ -2,7 +2,11 @@
 
 1. On a Windows Server 1803 host, open a PowerShell window
 
-2. Download the TP4 build
+2. If an existing version of Docker EE is installed, remove it
+
+`uninstall-package docker -provider dockermsftprovider`
+
+3. Download the TP4 build
 
 `Invoke-WebRequest -URI "https://s3-us-west-2.amazonaws.com/internal-docker-ee-builds/windows-server/18.09/docker-18.09.0-ee-1-tp4.zip" -usebasicparsing -outfile docker-18.09.0-ee-1-tp4.zip`
 
@@ -10,11 +14,11 @@
 
 `cd \docker-18.09.0-ee-1-tp4\docker`
 
-3. Start and switch to a second Powershell window to run the daemon
+5. Start and switch to a second Powershell window to run the daemon
 
 `.\dockerd.exe -D`
 
-4. Switch to the first Powershell window and verify Docker is running
+6. Switch to the first Powershell window and verify Docker is running
 
 ```
 .\docker.exe version
