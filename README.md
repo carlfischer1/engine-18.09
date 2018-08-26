@@ -2,6 +2,10 @@
 
 ## Installation
 
+[Installing EE 18.09 TP4 for Windows Server](https://github.com/carlfischer1/engine-18.09/blob/master/installation.md)
+
+### When EE 18.09 is GA
+
 As of 18.03.1, installing the Enterprise Engine for Windows Server supports two channels: 17.06 and 18.03, with 17.06 as the default. With the Q3 release three channels will be supported, with the default channel changing to 18.09.
 
 Specifying a channel at install time, or changing to a different channel: https://docs.docker.com/install/windows/docker-ee/
