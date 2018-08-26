@@ -12,7 +12,7 @@ For developers creating apps that require access to the host docker daemon, Dock
 
 ## Telemetry
 
-Extensive effort has gone into providing usage telemetry for Docker EE engines running on Linux distributions. While we have indirect Windows Server usage data from Hub push/pull operations (“Hub data”), to truly track engine usage requires equivalent telemetry for Docker EE engines running on Windows Server.
+Extensive effort has gone into providing usage telemetry for Docker EE engines running on Linux distributions. While implemented differently, we now have equivalent telemetry for Docker EE engines running on Windows Server.
 
 [Setup and walkthrough](https://github.com/carlfischer1/engine-18.09/blob/master/telemetry.md)
 
