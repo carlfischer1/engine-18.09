@@ -6,9 +6,10 @@
 
 ### When EE 18.09 is GA
 
-As of 18.03.1, installing the Enterprise Engine for Windows Server supports two channels: 17.06 and 18.03, with 17.06 as the default. With the Q3 release three channels will be supported, with the default channel changing to 18.09.
+As of 18.03.1, installing the Enterprise Engine for Windows Server supports two channels: 17.06 and 18.03, with 17.06 as the default for compatibility with EE 2.0. With the EE Q3 release three channels will be supported, with the default channel changing to 18.09 for compatibility with the Q3 release.
 
 Specifying a channel at install time, or changing to a different channel: https://docs.docker.com/install/windows/docker-ee/
+* PR pending prod push: https://github.com/docker/docker.github.io/pull/6972
 
 ## Named pipes
 
