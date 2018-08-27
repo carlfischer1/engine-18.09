@@ -7,8 +7,10 @@ Opt-out
 
 `echo '{"features":{"telemetry":true}}' > %PROGRAMFILES%\docker\daemon.json`
 
-* To verify state, at daemon startup, in debug log look for:
+* To verify state, at daemon startup look for:
 
-`DEBU[2018-08-27T17:19:08.099327900Z] Docker daemon will send anonymous usage telemetry`
+`INFO[2018-08-23T14:58:21.443100742Z] starting telemetry service`
 
-* Production data is available via https://docker.looker.com/looks/3324
+* Production data:
+
+https://docker.looker.com/looks/3324
