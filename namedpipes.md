@@ -50,3 +50,6 @@ microsoft/windowsservercore   1803                d03ee2083c4d        1 day ago 
 >> --isolation hyperv `
 >> microsoft/windowsservercore:1803 powershell
 ```
+
+
+Note: Use within `service create` is [pending](https://github.com/docker/swarmkit/pull/2691)
