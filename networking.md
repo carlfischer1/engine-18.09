@@ -5,12 +5,11 @@ The ingress service publishing and VIP service discovery walkthroughs start from
 # Ingress service publishing
 Ensure port 8080 is open in security group used by the worker VMs
 
-`docker service create --name iis --replicas 2 -p 8080:80 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1803`
+`docker service create --name iis --replicas 1 -p 8080:80 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1803`
 
 Browse to `http://<Public IP address of any VM in the swarm>:8080`
 
 Default IIS website should be displayed
-
 
 # VIP service discovery
 
