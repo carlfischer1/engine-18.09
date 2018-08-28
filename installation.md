@@ -18,10 +18,10 @@
 
 `c:\docker\dockerd.exe -D`
 
-6. Switch to the first Powershell window and verify Docker is running
+6. Switch back to the first Powershell window and verify Docker is running
 
 ```
-.\docker.exe version
+docker version
 Client:
  Version:           18.09.0-ee-1-tp4
  API version:       1.39
