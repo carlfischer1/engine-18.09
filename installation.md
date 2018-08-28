@@ -12,11 +12,11 @@
 
 `expand-archive docker-18.09.0-ee-1-tp4.zip c:\`
 
-`cd \docker-18.09.0-ee-1-tp4\docker`
+`$Env:Path += ";c:\docker;"`
 
 5. Start and switch to a second Powershell window to run the daemon
 
-`.\dockerd.exe -D`
+`c:\docker\dockerd.exe -D`
 
 6. Switch to the first Powershell window and verify Docker is running
 
@@ -41,3 +41,7 @@ Server:
   OS/Arch:          windows/amd64
   Experimental:     false
   ```  
+
+7. (Optional) Pre-pull Windows IIS web server image
+
+`docker pull microsoft/iis:windowsservercore-1803`
