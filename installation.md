@@ -56,10 +56,7 @@ Server:
 
 `sudo apt-key fingerprint 6D085F96`
 
-`sudo add-apt-repository \
-   "deb [arch=amd64] $DOCKER_EE_URL/ubuntu \
-   $(lsb_release -cs) \
-   $DOCKER_EE_VERSION"`
+`sudo add-apt-repository "deb [arch=amd64] $DOCKER_EE_URL/ubuntu $(lsb_release -cs) $DOCKER_EE_VERSION"`
 
 `sudo apt-get update`
 
