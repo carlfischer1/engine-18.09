@@ -6,7 +6,7 @@
 
 `uninstall-package docker -provider dockermsftprovider`
 
-3. Download the TP4 build
+3. Download the 18.09 beta 1 build
 
 `Invoke-WebRequest -URI "https://s3-us-west-2.amazonaws.com/internal-docker-ee-builds/windows-server/18.09/docker-18.09.0-ee-1-tp4.zip" -usebasicparsing -outfile docker-18.09.0-ee-1-tp4.zip`
 
@@ -40,24 +40,4 @@ Server:
   Built:            Fri Aug 24 23:25:35 2018
   OS/Arch:          windows/amd64
   Experimental:     false
-  ```  
-
-7. (Optional) Pre-pull Windows IIS web server image
-
-`docker pull microsoft/iis:windowsservercore-1803`
-
-# Installing the 18.09 TP4 engine on Ubuntu 16.04 (Xenial)
-
-`DOCKER_EE_URL=https://s3-us-west-2.amazonaws.com/internal-docker-ee-builds/docker-ee-linux`
-
-`DOCKER_EE_VERSION=test`
-
-`curl -fsSL "${DOCKER_EE_URL}/ubuntu/gpg" | sudo apt-key add -`
-
-`sudo apt-key fingerprint 6D085F96`
-
-`sudo add-apt-repository "deb [arch=amd64] $DOCKER_EE_URL/ubuntu $(lsb_release -cs) $DOCKER_EE_VERSION"`
-
-`sudo apt-get update`
-
-`sudo apt-get install docker-ee=2:18.09.0~ee~1~0.18.09.0~ee~1~tp4.tp18.09.0~ee~1~tp4-0~ubuntu`
+  ```
