@@ -55,7 +55,7 @@ CONTAINER ID        IMAGE                              COMMAND             CREAT
 5. Inspect the container to verify Hyper-v isloation
 
 ```
-\docker\docker inspect 791 | Select-String Isolation
+c:\docker\docker inspect 791 | Select-String Isolation
 
             "Isolation": "hyperv",
 ```
