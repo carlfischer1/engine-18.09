@@ -41,3 +41,9 @@ Server:
   OS/Arch:          windows/amd64
   Experimental:     false
   ```
+  
+7. Pre-pull IIS image (optional)
+
+```
+docker pull microsoft/iis:windowsservercore-1709
+```
