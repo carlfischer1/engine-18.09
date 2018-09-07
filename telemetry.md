@@ -3,14 +3,11 @@
 Telemetry phones home at engine start, then every 24 hours. Also included with 18.03.1-ee-3. The data reported is identical to that with Linux EE engines.
 
 Opt-out
-* POST-TP4: Features in engine configuration:
 
-`echo '{"features":{"telemetry":true}}' > %PROGRAMFILES%\docker\daemon.json`
+Set `telemetry` to false in `features` within the engine configuration:
 
-* To verify state, at daemon startup look for:
+`echo '{"features":{"telemetry":false}}' > %PROGRAMFILES%\docker\daemon.json`
+
+* To verify if telemetry is enabled, at startup look for the following in the daemon log:
 
 `INFO[2018-08-23T14:58:21.443100742Z] starting telemetry service`
-
-* Production data:
-
-https://docker.looker.com/looks/3324
