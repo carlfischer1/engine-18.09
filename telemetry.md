@@ -8,6 +8,6 @@ Set `telemetry` to false in `features` within the engine configuration:
 
 `echo '{"features":{"telemetry":false}}' > %PROGRAMFILES%\docker\daemon.json`
 
-* To verify if telemetry is enabled, at startup look for the following in the daemon log:
+* To verify telemetry state, at startup look for the following line in the daemon log:
 
 `INFO[2018-08-23T14:58:21.443100742Z] starting telemetry service`
