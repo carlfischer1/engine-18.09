@@ -12,7 +12,7 @@ For developers creating apps that require access to the host docker daemon, Dock
 
 ## Networking
 
-Prior to EE 18.03.1, Windows supported a subset of networking functionality compared to Linux. Parity in this area has been a frequent customer request, and with the EE Q3 release and EE 18.09 engine ingress routing mesh and VIP service discovery can now be used with Windows workloads.
+Prior to EE 18.03.1, Windows supported a subset of networking functionality compared to Linux. Parity in this area has been a frequent customer request, and with the Docker Enterprise 2.1 and Windows 18.09 engine ingress routing mesh and VIP service discovery can now be used with Windows workloads.
 
 [Walkthrough](https://github.com/carlfischer1/engine-18.09/blob/master/networking.md)
 
