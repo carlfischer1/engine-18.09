@@ -5,7 +5,7 @@ The ingress service publishing and VIP service discovery walkthroughs start from
 # Ingress service publishing
 Ensure port 8080 is open in security group used by the worker VMs
 
-`docker service create --name iis --replicas 1 -p 8080:80 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1803`
+`docker service create --name iis --replicas 1 -p 8080:80 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1709`
 
 Browse to `http://<Public IP address of any VM in the swarm>:8080`
 
@@ -19,9 +19,9 @@ Create an overlay network and deploy two services, each will get a VIP address:
 
 `docker network create overlay1 --driver overlay`
 
-`docker service create --name s1 --replicas 2 --network overlay1 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1803`
+`docker service create --name s1 --replicas 2 --network overlay1 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1709`
 
-`docker service create --name s2 --replicas 2 --network overlay1 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1803`
+`docker service create --name s2 --replicas 2 --network overlay1 --constraint node.platform.os==windows microsoft/iis:windowsservercore-1709`
 
 Find a container ID for each task (run on workers)
 
